@@ -6,7 +6,7 @@ import random
 
 
 app = Flask(__name__)
-redis = Redis(host='localhost', port=6379, db=1)
+redis = Redis(host='redis', port=6379)
 
 
 challenge_list = ['challenge 1',
@@ -49,4 +49,5 @@ def submit_spending():
 
 
 if __name__ == '__main__':
-    app.run()
+    app.run(host="0.0.0.0", port=5000, debug=True)
+
