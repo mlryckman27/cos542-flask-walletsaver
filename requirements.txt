@@ -1,6 +1,9 @@
 # This file is used by pip to install required python packages
 # Usage: pip install -r requirements.txt
 
+# Redis
+redis==4.5.4
+
 # Flask Framework
 click==7.1.2
 Flask==2.0.2

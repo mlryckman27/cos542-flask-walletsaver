@@ -7,18 +7,19 @@
     <body>
         <div id="spending">
             <p>Hello, {{username}}!</p>
-            <form action="/submit/", method="POST">
+            <form action="/", method="POST">
+                <input type="text" name="item">
                 <input type="number" step="0.01" name="spending">
                 <button name="submitButton" type="submit">SUBMIT</button>
             </form>
         </div>
 
         <div id="savings">
-            <p id="total_savings">{{total_savings}}</p>
+            <p id="total_savings">Total Saved: {{total_savings}}</p>
         </div>
 
         <div id="challenge">
-            <p id="random_challenge">{{random_challenge}}</p>
+            <p id="random_challenge">Instead of spending {{amount}} on {{item}}, do this instead: {{random_challenge}}</p>
         </div>
     </body>
 </html>
