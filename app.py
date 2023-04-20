@@ -9,13 +9,13 @@ app = Flask(__name__)
 redis = Redis(host='redis', port=6379)
 
 
-challenge_list = ['challenge 1',
-                  'challenge 2',
-                  'challenge 3',
-                  'challenge 4',
-                  'challenge 5',
-                  'challenge 6',
-                  'challenge 7']
+challenge_list = ['Activity 1: Take a 30-minute walk.',
+                  'Activity 2: Do 20 sit-ups.',
+                  'Activity 3: Read one chapter of a book you haven\'t yet read.',
+                  'Activity 4: Write a one-page short story.',
+                  'Activity 5: Do 20 pushups.',
+                  'Activity 6: Pick one room that needs to be cleaned the most, spend 45 minutes cleaning it.',
+                  'Activity 7: Create 10-minute video blog about one of your favorite hobbies or interests.']
 
 redis.delete('total_savings')
 redis.delete('challenge')
