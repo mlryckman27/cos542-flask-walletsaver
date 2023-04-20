@@ -26,7 +26,7 @@ for elem in challenge_list:
 @app.route('/')
 @app.route('/index.html')
 def index():
-    return render_template('index.html', username="User")
+    return render_template('index.html')
 
 
 @app.route("/", methods=['POST'])

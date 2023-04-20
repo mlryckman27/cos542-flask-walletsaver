@@ -6,9 +6,7 @@ services:
       - '6379:6379'
 
   web:
-    build:
-      context: .
-    stop_signal: SIGINT
+    build: .
     ports:
       - '5000:5000'
     depends_on:
