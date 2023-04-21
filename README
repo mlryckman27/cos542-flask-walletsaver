@@ -1,0 +1,22 @@
+Description:
+
+The main service contains a Flask app allows users engage in financial management.
+In essence, the app presents the user with the choice to enter a name of an item and its value;
+in return, the app connects to the second service (a Redis database) and selects a random
+alternative activity that is generally considered a healthy alternative, which is then
+returned to the user.
+
+
+
+Running the application:
+
+The application is composed to two images that will run on Docker.
+Please use the 'docker-compose.yml' file and pull the images from their
+respective repositories by invoking 'docker-compose up' in the same directory as the
+'docker-compose.yml' file.
+
+The application will run on port 5000.  If you are running the instance on
+your local machine, you may connect via 'localhost:5000'.  If you are running the application
+on a virtual machine (such as Ubuntu 22.04 on Jetstream), you may connect by pointing your
+web browser to the public ip address of the virtual machine at port 5000, like this:
+<public-ip-address>:5000.
